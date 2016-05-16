@@ -456,10 +456,19 @@ selected&lt;-names(training[,-highlyCorrelated])</code></pre>
 ## D    0    0   26 2546    1 0.010493587
 ## E    0    0    1    4 2881 0.001732502</code></pre>
 </div>
+<div id="the-estimated-out-of-sample-error-is-0.389" class="section level4">
+<h4>The estimated out of sample error is 0.389%</h4>
+</div>
 <div id="error-rate-against-testing-data" class="section level4">
 <h4>Error rate against testing data</h4>
 <pre class="r"><code>ac</code></pre>
 <pre><code>## [1] 0.003823604</code></pre>
+</div>
+<div id="this-result-is-not-as-good-as-the-model-using-only-num_window-as-predictor." class="section level4">
+<h4>This result is not as good as the model using only “num_window” as predictor.</h4>
+</div>
+<div id="although-num_window-is-available-in-the-final-20-testing-cases-using-id-like-variable-to-predict-outcome-is-still-a-means-of-cheating-p" class="section level4">
+<h4>Although “num_window” is available in the final 20 testing cases, using id-like variable to predict outcome is still a means of cheating : P</h4>
 </div>
 <div id="over-all-all-models-trained-by-54-variables-performed-closly-good-in-terms-of-error-rate-on-testing-data.-so-it-is-reasonable-to-choose-a-smaller-ntree-and-mtry-number-to-save-some-computing-time." class="section level4">
 <h4>Over all, all models trained by 54 variables performed closly good in terms of error rate on testing data. So it is reasonable to choose a smaller ntree and mtry number to save some computing time.</h4>
