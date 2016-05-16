@@ -277,10 +277,14 @@ ac <- 1-ac
 ```{r message=FALSE,warning=FALSE}
 bestmd
 ```
+####The estimated out of sample error is `r round((median(bestmd$err.rate[,"OOB"]))*100000)/1000`% 
+
 ####Error rate against testing data
 ```{r message=FALSE,warning=FALSE}
 ac
 ```
+####This result is not as good as the model using only "num_window" as predictor.
+####Although "num_window" is available in the final 20 testing cases, using id-like variable to predict outcome is still a means of cheating : P 
 
 ####Over all, all models trained by 54 variables performed closly good in terms of error rate on testing data. So it is reasonable to choose a smaller ntree and mtry number to save some computing time.
 
